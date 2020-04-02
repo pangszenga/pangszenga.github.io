@@ -3,7 +3,7 @@
   box-sizing: border-box;
   list-style: none;
   font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: .2em;
+  letter-spacing: .1em;
   line-height: 200%;
   margin: 0;
   padding: 0;
@@ -18,28 +18,40 @@ button:focus {
 }
 
 header {
-  /* display: grid;
-  grid-template-columns:30% 70%; */
-  display: block;
-  margin-left: 2em;
+  display: flex;
+  width: 100%;
+  margin-left: 0;
 }
 
-header p {
+.title {
   margin-left: 1em;
+  color: white;
+  padding: 1em 0;
+}
+
+.title h1 {
+  font-size: 1.5em;
 }
 
 .container {
   margin: 0 1em;
-  margin-right: 5em;
+}
+
+.button {
+  visibility: hidden;
+}
+
+.content-container {
+  width: 100%;
 }
 
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  height: 15em;
-  width:15em;
+  margin: 2em auto 3em auto;
+  height: 7em;
+  width:7em;
   overflow: hidden;
   border-radius: 50%;
   background-image: url("../img/logo.png");
@@ -48,144 +60,299 @@ header p {
   background-position: center;
 }
 
-.title {
-  margin-left: 5em;
-  color: white;
-  padding: 2em 0;
-}
-.title h1 {
-  font-size: 5em;
-}
-
-.content-container {
-  display: grid;
-  grid-template-columns:30% 70%;
-  /* overflow: hidden; */
-}
-
-.contact {
-  /* height: 100vh; */
-  color: white;
-  text-align: center;
-  padding: 2.5em 1em;
-}
-
-.portfolio {
-  display: grid;
-  text-align: center;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  grid-template-columns: 50% 50%;
-  padding: 4em;
-}
-
 .aboutMe {
   text-align: center;
   color: rgba(84, 84, 87, 0.75);
-  padding: 4em;
+  padding: 3em 2.1em 0 3.5em;
   background-color: white;
   border-radius: 2em;
   box-shadow: -5px -8px 76px -25px rgba(84, 84, 87, 0.75)
 }
 
-.button {
-  margin-top: 2em;
-  border: none;
-  fill: #E0B587;
+.aboutMe h1 ,
+.aboutMe h2 {
+  font-size: medium;
+  font-weight: 100;
+} 
+
+.aboutMe h3 {
+  font-size: small;
+  font-weight: 100;
 }
 
-.button-icon {
-  transition: all .6s ease-in-out; 
+.contact {
+  position: fixed;
+  width: 15%;
+  color: white;
+  text-align: center;
+  padding: 2.5em 1em;
 }
 
-.button-icon:hover {
-  transform: scale(1.3);
-}
-
-.icon {
+.contact svg {
   fill: rgba(84, 84, 87, 0.75);
-  margin-bottom: 2em;
-  
 }
 
 .portfolio a {
+  visibility: visible;
+  padding:2em;
   text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
   color: white;
+  background-color: rgba(84, 84, 87, 1);
 }
 
 .portfolio div {
+  padding-top: 4em;
   height: 15em;
+  margin-bottom: 1em;
 }
 
 .prj1 {
-  display: flex;
-  vertical-align: middle;
+  opacity: .6;
   background-image: url("../img/1.png");
   background-position: top;
   background-size: cover;
-  transition: all .6s ease-in-out;
-}
-
-.prj1:hover {
-  opacity:.4;
 }
 
 .prj2 {
+  opacity: .6;
   background-image: url("../img/2.png");
   background-position: top;
   background-size: cover;
-  transition: all .6s ease-in-out;
-}
-
-.prj2:hover {
-  opacity:.4;
 }
 
 .prj3 {
+  opacity: .6;
   background-image: url("../img/3.png");
-  background-position: top;
+  background-position: 0;
   background-size: cover;
-  transition: all .6s ease-in-out;
-}
-
-.prj3:hover {
-  opacity:.4;
 }
 
 .prj4 {
+  opacity: .6;
   background-image: url("../img/4.png");
   background-position: top;
   background-size: cover;
-  transition: all .6s ease-in-out;
 }
 
-.prj4:hover {
-  opacity:.4;
-}
 
 .prj5 {
+  opacity: .6;
   background-image: url("../img/5.png");
   background-position: top;
   background-size: cover;
-  transition: all .6s ease-in-out;
 }
 
-.prj5:hover {
-  opacity:.4;
-}
 
 .prj6 {
+  opacity: .6;
   background-image: url("../img/6.png");
   background-position: top;
   background-size: cover;
-  transition: all .6s ease-in-out;
 }
 
-.prj6:hover {
-  opacity:.4;
-}
 
-.hidden {
-  visibility: hidden;
-}
+/* For bigger screens */
 
+@media only screen and (min-width: 992px){
+  *{
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: .2em;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: block;
+    margin-left: 2em;
+  }
+  
+  header p {
+    margin-left: 1em;
+  }
+  
+  .container {
+    margin: 0 1em;
+    margin-right: 10em;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 15em;
+    width:15em;
+    overflow: hidden;
+    border-radius: 50%;
+    background-image: url("../img/logo.png");
+    background-size: 10em;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .title {
+    margin-left: 10em;
+    color: white;
+    padding: 2em 0;
+  }
+  .title h1 {
+    font-size: 5em;
+  }
+  
+  .content {
+    width: 70%;
+    margin-left: 30%;
+  }
+
+  
+  
+  .contact {
+    position: fixed;
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 2.5em 1em;
+  }
+  
+  .contact svg {
+    fill: rgba(84, 84, 87, 0.75);
+    width: 5em;
+    height: 5em;
+  }
+
+  .portfolio {
+    display: grid;
+    text-align: center;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: 50% 50%;
+    padding: 4em;
+  }
+  
+  .aboutMe {
+    text-align: center;
+    color: rgba(84, 84, 87, 0.75);
+    padding: 4em;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: -5px -8px 76px -25px rgba(84, 84, 87, 0.75)
+  }
+
+  .aboutMe h1 ,
+  .aboutMe h2 {
+    font-size: larger;
+    font-weight: 100;
+  } 
+
+  .aboutMe h3 {
+    font-size: medium;
+    font-weight: 100;
+  }
+  
+  .button {
+    visibility: visible;
+    margin-top: 2em;
+    border: none;
+    fill: #E0B587;
+  }
+  
+  .button-icon {
+    transition: all .6s ease-in-out; 
+  }
+  
+  .button-icon:hover {
+    transform: scale(1.3);
+  }
+  
+  .icon {
+    fill: rgba(84, 84, 87, 0.75);
+    margin-bottom: 2em;
+    
+  }
+  
+  .portfolio a {
+    visibility: hidden;
+    padding:2em;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    background-color: rgba(84, 84, 87, 1);
+  }
+  
+  .portfolio div {
+    padding-top: 6em;
+    height: 15em;
+  }
+  
+  .prj1 {
+    background-image: url("../img/1.png");
+    background-position: top;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+  }
+  
+  .prj1:hover {
+    opacity:.9;
+  }
+  
+  .prj2 {
+    background-image: url("../img/2.png");
+    background-position: top;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+  }
+  
+  .prj2:hover {
+    opacity:.9;
+  }
+  
+  .prj3 {
+    background-image: url("../img/3.png");
+    background-position: 0;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+  }
+  
+  .prj3:hover {
+    opacity:.9;
+  }
+  
+  .prj4 {
+    background-image: url("../img/4.png");
+    background-position: top;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+  }
+  
+  .prj4:hover {
+    opacity:.9;
+  }
+  
+  .prj5 {
+    background-image: url("../img/5.png");
+    background-position: top;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+  }
+  
+  .prj5:hover {
+    opacity:.9;
+  }
+  
+  .prj6 {
+    background-image: url("../img/6.png");
+    background-position: top;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+  }
+  
+  .prj6:hover {
+    opacity:.9;
+  }
+}
