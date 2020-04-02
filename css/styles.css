@@ -101,5 +101,53 @@ header p {
 .icon {
   fill: rgba(84, 84, 87, 0.75);
   margin-bottom: 2em;
+  
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio div {
+  height: 15em;
+}
+
+.prj1 {
+  display: flex;
+  vertical-align: middle;
+  background-image: url("../img/1.png");
+  background-position: top;
+  background-size: cover;
+}
+
+.prj2 {
+  background-image: url("../img/2.png");
+  background-position: top;
+  background-size: cover;
+}
+
+.prj3 {
+  background-image: url("../img/3.png");
+  background-position: top;
+  background-size: cover;
+}
+
+.prj4 {
+  background-image: url("../img/4.png");
+  background-position: top;
+  background-size: cover;
+}
+
+.prj5 {
+  background-image: url("../img/5.png");
+  background-position: top;
+  background-size: cover;
+}
+
+.prj6 {
+  background-image: url("../img/6.png");
+  background-position: top;
+  background-size: cover;
 }
 
