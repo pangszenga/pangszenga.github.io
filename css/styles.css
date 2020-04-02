@@ -13,6 +13,10 @@ body {
   background-color: rgb(184, 184, 190);
 }
 
+button:focus {
+  outline: none;
+}
+
 header {
   /* display: grid;
   grid-template-columns:30% 70%; */
@@ -119,35 +123,69 @@ header p {
   background-image: url("../img/1.png");
   background-position: top;
   background-size: cover;
+  transition: all .6s ease-in-out;
+}
+
+.prj1:hover {
+  opacity:.4;
 }
 
 .prj2 {
   background-image: url("../img/2.png");
   background-position: top;
   background-size: cover;
+  transition: all .6s ease-in-out;
+}
+
+.prj2:hover {
+  opacity:.4;
 }
 
 .prj3 {
   background-image: url("../img/3.png");
   background-position: top;
   background-size: cover;
+  transition: all .6s ease-in-out;
+}
+
+.prj3:hover {
+  opacity:.4;
 }
 
 .prj4 {
   background-image: url("../img/4.png");
   background-position: top;
   background-size: cover;
+  transition: all .6s ease-in-out;
+}
+
+.prj4:hover {
+  opacity:.4;
 }
 
 .prj5 {
   background-image: url("../img/5.png");
   background-position: top;
   background-size: cover;
+  transition: all .6s ease-in-out;
+}
+
+.prj5:hover {
+  opacity:.4;
 }
 
 .prj6 {
   background-image: url("../img/6.png");
   background-position: top;
   background-size: cover;
+  transition: all .6s ease-in-out;
+}
+
+.prj6:hover {
+  opacity:.4;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
