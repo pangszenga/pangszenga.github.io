@@ -7,11 +7,11 @@ $(document).ready(function(){
 	let showcase  = document.getElementsByClassName("showcase");
 
 	function showPortfolio() {
-		portfolio.scrollIntoView()
+		portfolio.scrollIntoView({behavior: "smooth"})
 	}
 
 	function showAboutMe()  {
-		title.scrollIntoView();
+		title.scrollIntoView({behavior: "smooth"});
 	}
 
 	function showHide(item, index) {
