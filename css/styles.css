@@ -235,6 +235,7 @@ header {
   }
   
   .aboutMe {
+    max-width: 70%;
     text-align: center;
     color: rgba(84, 84, 87, 0.75);
     padding: 4em;
